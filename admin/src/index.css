@@ -1,0 +1,65 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body{
+  min-height:100vh ;
+  color:black;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+hr{
+  border:none;
+  height: 1px;
+  background-color: #a9a9a9;
+}
+
+@media (max-width: 900px) {
+   .sidebar-option p{
+    display: none;
+   }
+}
+
+.sidebar-option.active{
+  background-color: #fff0ed;
+  color: tomato;
+
+}
+
+@media (max-width: 600px) {
+    .list-table-formate{
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: 15px;
+    }
+    .list-table-formate.title{
+      display: none;
+    }
+}
+
+/* from order  */
+
+@media (max-width:1000px) {
+   .order-list{
+     grid-template-columns:0.5fr 2fr 1fr;
+      font-size: 12px;
+      padding: 15px 8px;
+ 
+   }
+   .order-list select{
+      padding: 5px;
+      font-size: 12px;
+   }
+   .order-list img{
+     width:40px ;
+   }
+}
